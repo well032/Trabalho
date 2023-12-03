@@ -1,0 +1,342 @@
+        /* Configuração padrão para iniciar o projeto do CSS */
+        * {
+            padding: 0;
+            margin: 0;
+            vertical-align: baseline;
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {  /* Cabeçalho */
+            display: flex;
+            /* deixa os itens lado a lado  */
+            align-items: center;
+            /* alinhando os itens do header para o centro*/
+            justify-content: space-evenly;
+            /* Tradução:justificar-conteudo: espaço uniforme. Alinhar os itens iguamente dento da página. */
+            padding: 15px;
+            /* preenchimento */
+            background-color: 	#63b8d4;
+            /* cor de fundo */
+            overflow: hidden; /*  é usada para ocultar qualquer conteúdo que exceda os limites de um elemento, ou seja, o conteúdo que estiver fora do tamanho definido será cortado e não será exibido. */ 
+            line-height: 200px;
+            /* altiura da linha*/
+            max-height: 200px;
+            /*  aultura máxima*/
+        }
+
+        header>h1 { /* Titulo do Cabeçalho  */
+            /* Selecionamos aqui a cor da letra do nosso H1, ou seja, do nosso titulo */
+            color: white;
+            /* Chamamos a propriedade color e definimos uma cor em questão */
+        }
+
+        header>img { /* Imagem do Cabeçalho */
+            width: 120px;
+            /* Largura da Imagem*/
+            height: 100px;
+            /* Altura da  Imagem */
+        }
+
+        #menu-header { /* Menu do Cabeçalho */
+
+            /* nosso menu de navegação */
+            display: flex;
+            /* Responsavel por colocar os itens lado a lado  */
+            align-items: center;
+            /* Alinhar ps itens do nosso Header para o centro*/
+        }
+
+        #list-header {  /* Lista do Cabeçalho */
+
+            /* Nossa lista não ordenada, aqui mudaremos diretamente nossa list. */
+            display: flex;
+            /* Responsável por colocar os itens Lado a Lado */
+            margin-right: 1rem;
+            /* margem da direita. 1 rem equivale a 16px, oi seja, podemos ultilizar para facilitar a inserção de PX*/
+        }
+
+        #list-menu { /* Menu da lista  */
+
+            display: flex; /* deixa os itens lado a lado */
+        }
+
+        .item-menu-header {
+            /* Nossa li que estão dentro do List Menu, onde se encotram os nomes do itens apresentados no Header */
+            margin-right: 25px;
+            /*  Margem da direita*/
+        }
+
+        .item-menu-header>a {
+            /* Chamamos para fazer algumas alterações */
+            text-decoration: none;
+            /*  Tira a linha do link*/
+            color: black;
+            /* Cor da letra*/
+            font-size: 14px;
+            /* Tamanho da letra. */
+        }
+
+        .item-menu-header>a:hover {
+            /*  Nossa (LI) que estão dentro do List Menu. (a) nossa tag de link que é representanda por: HOME/PRODUTOS/CONTATO, e o Hover é resposável pela modificação de cor ao passar o cursor em cima da letra.*/
+            color: white;
+            /* Cor da letra */
+            transition: 0.8s;
+            /* Transição da mudanda de cor da letra.*/
+        }
+
+        #botao-header {
+            /* Nossa Id do botão de Login */
+            display: flex;
+            /* Responsável por colocar os itens  Lado a Lado */
+        }
+
+        #botao-header>button {
+            /*  Aqui chamamos nossa Id e onde queremos fazer alteração, no caso, o Botão(Button)*/
+            padding: 8px;
+            /* Cuida do Preenchimento*/
+            background-color: transparent;
+            /* Aqui deixamos o fundo do Botão transparent, ou seja, sem o fundo branco que estava em primeiro ´plano */
+            border: none;
+            /*  None é usado para retirar algo, nesse caso a borda.*/
+        }
+
+        #botao-header>button>a {
+            /* Estamos chamando aqui nossa Tag de Link para alteração */
+            display: flex;
+            /* Deixar os itens Lado a Lado*/
+            align-items: center;
+            /* Alinhar os itens para o centro */
+            color: black;
+            /* cor da letra */
+            text-decoration: none;
+            /* tirar a sublinha do link */
+        }
+
+        #botao-header>button>a:hover {
+            /* usaremos para mudar algumas coisas na tag (A) */
+            text-decoration: none;
+            /* tirar a sublinha do link */
+            color: white;
+            /* cor da letra */
+            transition: 0.8s;
+            /* transição da cor de letra */
+        }
+
+        #botao-header>button>a>img {
+            width: 30px;
+            /* Largura da imagem*/
+            height: 30px;
+            /* Altura da imagem */
+            margin-right: 2px;
+            /* Espaçamento do canto direito (right) */
+        }
+
+
+
+        /*Diferença entre ID e Class: A diferença entre um id e uma class é que uma é que um id é usado apenas para indentificar um único elemnteo em nosso HTML. Os indentificadores são usados apenas quando um elemento na página precisar ter um estilo especifico aplicado a ele, no entanto, uma class pode ser usada para indentificar mais de um elemento HTML  */
+
+
+
+        #img-destaque {
+            background-image: url(imagens/imagens\ principal.webp);
+            background-position: center;
+            /* Posicionar a imagem ao centro*/
+            background-size: cover;
+            /* Preechimento total */
+            width: 100%;
+            /*Largura da imagem  */
+            height: 80vh;
+            /* Altura da imagem */
+        }
+
+
+
+        #clients {
+            background-color: white;
+            /* Cor do Fundo */
+            padding: 50px;
+            /* Espaçamento da borda */
+            margin-top: 40px;
+            /* Espaçamento superior*/
+        }
+
+        #clients>h2 {
+            text-align: center;
+            /* Deixamos o texto ao centro */
+            font-size: 36px;
+            /* tamanho da letra */
+            margin-top: 40px;
+            /* Espaçamento do topo */
+        }
+
+        .line {
+            margin: 0 auto;
+            /* Nesse caso la (line) é pra deixar no centro. */
+            width: 30%;
+            /* largura da Linha */
+
+        }
+
+        #clients-list {
+            display: flex;
+            /* Deixa o item Lado a Lado */
+            align-items: center;
+            /* Alinhamento dos itens ao centro*/
+            justify-content: space-evenly;
+            /* Espaço uniforme. (Deixa o item certinho na sua tela) */
+            margin-top: 35px;
+            /* Espaçamento superior */
+        }
+
+        .clients-item {
+            display: flex;
+            /* Deixa o item Lado a lado  */
+            justify-content: center;
+            /* Justifica os itens ao centro */
+            align-items: center;
+            /* Deixa os itema ao centro */
+            flex-direction: column;
+            /* Deixa os itens em coluna*/
+        }
+
+        .clients-item>img {
+            width: 84px;
+            /* Largura */
+            height: 84px;
+            /* Altura */
+        }
+
+        .clients-item>h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* Mudar a Fonte */
+            font-size: 32px;
+            /* Tamanho da fonte */
+            margin-top: 10px;
+            /* Espaçamento superior */
+            align-items: center;
+            /* Deixa os itens ao centro */
+        }
+
+        .clients-item>p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* Mudar a Fonte */
+            font-size: 18px;
+            /* Tamanho da fonte */
+            align-items: center;
+            /* Espaçamento superior */
+            margin-top: 10px;
+            /* Deixa os itens ao centro */
+        }
+
+
+        #sobre-nos {
+            padding: 120px;
+            /* Espaçamentos da Margem */
+            background-image: url(imagens/mudar.jpg);
+            /* Acrecentamos a imagem */
+            background-repeat: no-repeat;
+            /* no-repeat, para não repetir a imagem, caso ela seja muito Pequena/Grande */
+            background-position: center;
+            /* Pocionamento da imagem no centro */
+            background-size: cover;
+            /* Não acontecer o ultrapassamento do site */
+            background-attachment: fixed;
+            /* Fixamos a imagem ao site */
+        }
+
+        #sobre-nos>h3 {
+            color: white;
+            /* Cor da lentra*/
+            text-align: center;
+            /* Deixamos o texto ao centro */
+            font-size: 40px;
+            /* Tamanho da letra */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* Mudamos a fonte da letra */
+        }
+
+        #sobre-nos>p {
+            color: white;
+            /* Cor da letra*/
+            font-size: 20px;
+            /* Tamanho da fonte */
+            margin: 30px;
+            /* Espaçamento*/
+            margin-top: 2em;
+            /* Espaçamento superior*/
+            text-align: left;
+            /* Justificamos o texto à esquerda.*/
+        }
+
+        footer {
+            background-color: #778899;
+            /* Acrecentamos a imagem */
+            background-repeat: no-repeat;
+            /* no-repeat, para não repetir a imagem, caso ela seja muito Pequena/Grande */
+            background-size: cover;
+            /* Não acontecer o ultrapassamento do site */
+            background-position: bottom;
+            /* Pocionamento da imagem*/
+            padding: 15px;
+        }
+
+        footer>ul {
+            /* Chamamos noss alista para ser Editada */
+            display: flex;
+            /* Deixamos os itens Lado a Lado*/
+            justify-content: space-evenly;
+            /* Espaçamento Gradual (Iguamente). */
+        }
+
+        .itens-footer {
+            text-align: center; /* Deixamos o item ao centro */
+            display: flex; /* Deixa o item Lado a Lado  */ 
+            margin-top: 30px; /* Margem superior */ 
+            font-size: 20px; /* Tamanho da letra */
+        }
+
+        footer>h2 {
+            text-align: center;
+            /* Deixamos o texto ao centro */
+            font-size: 40px;
+            /* Tamanho da letra */
+            font-weight: bold; /* Grossura da letra*/ 
+            margin-bottom: 30px; /* Espaçamento inferior */ 
+            color: black; /* Cor da letra */ 
+        }
+
+        .itens-footer>img {
+            width: 34px;
+            /* Largura */
+            height: 34px;
+            /* Altura */
+        }
+
+        .itens-footer>p{
+            margin-left: 10px; /* Espaçamento a esquerda*/ 
+            color: black; /* Cor da letra*/
+            font-weight: bold; /* Grossura da letra*/
+            font-size: 24px; /* Tamanho da letra */ 
+        }
+
+        @media(max-whidth:430px){
+    #menu-header {
+    display: none;
+}
+
+#botao-header button a {
+    display: block;
+    font-family: bold;
+}
+
+#botao-header button a p{
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao-header button a img {
+    width: 30%;
+    
+}
+        }
